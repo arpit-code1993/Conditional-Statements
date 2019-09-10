@@ -12,9 +12,9 @@ namespace Conditional_Statements
              
 
                 int years_of_experience = 0;
-                // This variable will gather the user input
+                
                 Console.WriteLine("How many years of experience you have");
-                // Assign the number of years the user has input to the years_in_sales variable
+                
                 years_of_experience = int.Parse(Console.ReadLine());
 
                 switch (years_of_experience)
@@ -44,9 +44,8 @@ namespace Conditional_Statements
                 }
                   catch
             {
-                Console.WriteLine("Please use a decimal data type for your sales amount next time...");
+                Console.WriteLine("Please use a integer data type for your years of experience...");
                 Console.WriteLine("--- OR ---");
-                Console.WriteLine("Please use an integer data type for your number of years in sales next time ...");
                 Console.WriteLine("Press any key to exit the program and try again...");
                 Console.ReadKey(true);
             }
